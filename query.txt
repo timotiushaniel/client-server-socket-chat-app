@@ -1,0 +1,5 @@
+1. GENRE
+SELECT film.title, film_category.category_id, category.name FROM film, film_category, category WHERE film.film_id = film_category.film_id AND category.category_id = film_category.category_id AND film_category.category_id = ? ORDER BY rand() LIMIT 10;
+
+2. TAHUN
+SELECT title, release_year FROM film WHERE release_year = ? ORDER BY rand() LIMIT 5 
